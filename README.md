@@ -13,7 +13,12 @@
 4. 指针
 
 ```
-struct
+struct Tnode {
+	string name;
+	bool gender;  // 0 represents male while 1 represents female
+	bool alive;  // 0 represents dead while 1 represents alive
+	Tnode* left, right, forward; // forward points to its parent node
+};
 ```
 
 ### 用二叉树储存家庭关系的基本结构
